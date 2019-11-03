@@ -18,7 +18,7 @@ export function getBinaryName()
 	let binaryName = [
 		platform, '-',
 		process.arch, '-',
-		process.versions.modules
+		57
 	].join( '' );
 
 	return [binaryName, outputName].join( '_' );
@@ -57,6 +57,5 @@ export function requireBinding()
 export function getBinaryUrl()
 {
 	let site = "https://github.com/ItsClemi/node-odbc/releases/download";
-
 	return [site, pkg.version, getBinaryName()].join( '/' );
 }
